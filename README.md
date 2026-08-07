@@ -1,5 +1,3 @@
-
-
  # 🍰 Mimo's Bite Bakery Website
 
 A modern and fully responsive bakery website built using HTML, CSS, and JavaScript. The website provides an attractive user interface where users can explore bakery products, browse the menu, view the gallery, and place orders through an interactive shopping experience.
@@ -35,7 +33,7 @@ https://github.com/Poulami-sudo/mimo-bite-website
 
 **Poulami Nandi**
 
-Aspiring Full Stack Developer | AI Integration Learner | Front-End Developer
+Aspiring Software Engineer | AI Integration Learner | Front-End Developer
 
 GitHub: https://github.com/Poulami-sudo
 
