@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mimo's Bite | Fresh Cakes, Brownies & Cookies</title>
+
+    <link rel="icon" href="images/favicon.png" type="image/png">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+    <!-- Loader -->
+
+    <div id="loader">
+
+        <div class="spinner"></div>
+
+        <h2>Mimo's Bite</h2>
+
+    </div>
+
+    <!-- Welcome Popup -->
+
+    <div class="welcome-popup" id="welcomePopup">
+
+        <div class="welcome-box">
+
+            <h2>Welcome to Mimo's Bite 🎂</h2>
+
+            <p>Freshly Baked With Love ❤️</p>
+
+            <button onclick="closeWelcome()">
+            Explore Now
+        </button>
+
+        </div>
+
+    </div>
+
+
+
+
+    <!-- Header -->
+
+    <header>
+
+        <h1>
+            <a href="index.html">Mimo's Bite</a>
+        </h1>
+
+
+        <nav>
+
+            <ul>
+
+                <li>
+                    <a href="index.html" class="active">Home</a>
+                </li>
+
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+
+                <li>
+                    <a href="menu.html">Menu</a>
+                </li>
+
+                <li>
+                    <a href="gallery.html">Gallery</a>
+                </li>
+
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+
+    </header>
+
+
+
+
+
+
+    <!-- Hero Section -->
+
+    <section class="hero">
+
+
+        <img src="Web Banner.img.png" alt="Bakery Banner">
+
+
+        <h2>
+            Welcome to Mimo's Bite
+        </h2>
+
+
+        <p>
+            Freshly Baked Cakes, Pastries, Cookies, Ice Cream & Snacks
+        </p>
+
+
+        <button id="orderBtn">
+        Order Now
+    </button>
+
+
+    </section>
+
+
+
+
+
+
+
+
+    <!-- Products Section -->
+
+    <section class="products">
+
+
+        <h2>
+            Our Best Sellers
+        </h2>
+        <div class="search-box">
+
+            <input type="text" id="searchInput" placeholder="🔍 Search your favorite dessert...">
+
+        </div>
+        <div class="filter-buttons">
+
+            <button onclick="filterItems('all')">All</button>
+
+            <button onclick="filterItems('cake')">Cakes</button>
+
+            <button onclick="filterItems('brownie')">Brownies</button>
+
+            <button onclick="filterItems('cookie')">Cookies</button>
+
+            <button onclick="filterItems('cupcake')">Cupcakes</button>
+
+            <button onclick="filterItems('pastry')">Pastries</button>
+
+            <button onclick="filterItems('icecream')">Ice Cream</button>
+
+        </div>
+
+
+
+        <div class="product-container">
+
+
+
+            <!-- Product 1 -->
+
+            <div class="product-card">
+
+
+                <span class="badge">
+                Best Seller
+            </span>
+
+
+                <img src="Chocolate brownie .img.png" alt="Chocolate Brownie">
+                <span class="wishlist" onclick="toggleWishlist(this)">🤍</span>
+
+
+                <h3>
+                    Chocolate Brownie
+                </h3>
+
+
+                <p>
+                    Rich, fudgy brownie made with premium chocolate.
+                </p>
+
+
+                <p class="price">
+                    Starting from ₹129
+                </p>
+
+
+                <p class="rating">
+                    ★★★★★ <span>4.9/5</span>
+                </p>
+
+
+                <button onclick="addToCart('Chocolate Brownie',129)">
+                Buy Now
+            </button>
+
+
+            </div>
+
+
+
+
+
+
+            <!-- Product 2 -->
+
+
+            <div class="product-card">
+
+
+                <img src="Cookies.img.png" alt="Cookies ">
+                <span class="wishlist" onclick="toggleWishlist(this)">🤍</span>
+
+
+                <h3>Cookies</h3>
+
+
+                <p>
+                    Freshly baked cookies with crispy edges and chocolate chips.
+                </p>
+
+
+                <p class="price ">
+                    Starting from ₹89
+                </p>
+
+
+                <p class="rating ">
+                    ★★★★★ <span>4.8/5</span>
+                </p>
+
+
+                <button onclick="addToCart( 'Cookies',89) ">
+                Buy Now
+            </button>
+
+
+            </div>
+
+
+
+
+
+
+
+            <!-- Product 3 -->
+
+
+            <div class="product-card ">
+
+
+                <img src="Birthday cake.img (2).png " alt="Birthday Cake ">
+                <span class="wishlist" onclick="toggleWishlist(this)">🤍</span>
+
+
+                <h3>
+                    Birthday Cakes
+                </h3>
+
+
+                <p>
+                    Elegant pink & white and chocolate cakes customized for celebrations.
+                </p>
+
+
+                <p class="price ">
+                    Starting from ₹399
+                </p>
+
+
+                <p class="rating ">
+                    ★★★★★ <span>5.0/5</span>
+                </p>
+
+
+                <button onclick="addToCart( 'Birthday Cakes',399) ">
+                Buy Now
+            </button>
+
+
+            </div>
+
+
+
+        </div>
+
+
+    </section>
+
+
+    <div class="view-menu">
+
+        <a href="menu.html">
+            <button>🍰 View Full Menu</button>
+        </a>
+
+    </div>
+
+
+
+
+
+
+
+    <!-- Why Choose Us -->
+
+
+    <section class="features ">
+
+
+        <h2>
+            Why Choose Mimo's Bite?
+        </h2>
+
+
+        <div class="feature-container ">
+
+
+            <div class="feature-card ">
+
+                <h3>
+                    🎂 Freshly Baked
+                </h3>
+
+                <p>
+                    Every item is baked fresh every day.
+                </p>
+
+            </div>
+
+
+
+            <div class="feature-card ">
+
+                <h3>
+                    🍫 Premium Ingredients
+                </h3>
+
+                <p>
+                    We use only high-quality ingredients.
+                </p>
+
+            </div>
+
+
+
+            <div class="feature-card ">
+
+                <h3>
+                    🚚 Fast Delivery
+                </h3>
+
+                <p>
+                    Quick and safe delivery at your doorstep.
+                </p>
+
+            </div>
+
+
+        </div>
+
+
+    </section>
+
+
+    <!-- Customer Reviews -->
+
+    <section class="reviews">
+
+        <h2>What Our Customers Say</h2>
+
+        <div class="review-container">
+
+            <div class="review-card">
+
+                <h3>★★★★★</h3>
+
+                <p>"Absolutely delicious cakes!"</p>
+
+                <h4>— Priya Sharma</h4>
+
+            </div>
+
+            <div class="review-card">
+
+                <h3>★★★★★</h3>
+
+                <p>"Fresh brownies and fast delivery."</p>
+
+                <h4>— Rahul Dasgupta</h4>
+
+            </div>
+
+            <div class="review-card">
+
+                <h3>★★★★★</h3>
+
+                <p>"Beautiful customized birthday cakes."</p>
+
+                <h4>— Sneha Paul</h4>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Cart Section -->
+
+    <section class="cart-section">
+
+        <h2>Your Cart</h2>
+
+        <div class="cart">
+
+            <h3>🛒 Cart (<span id="cart-count">0</span>)</h3>
+
+            <p id="cart-item">
+                No items yet
+            </p>
+
+            <div id="cart-list"></div>
+
+            <p id="total-price">
+                Total: ₹0
+            </p>
+
+            <button id="checkoutBtn">
+            Checkout
+        </button>
+
+            <button id="clearCartBtn">
+            Clear Cart
+        </button>
+
+        </div>
+
+    </section>
+
+    <!-- Newsletter -->
+
+    <section class="newsletter">
+
+        <h2>Stay Updated 🍰</h2>
+
+        <p>
+            Subscribe to receive our latest offers, new cake collections and festive discounts.
+        </p>
+
+        <form id="newsletterForm">
+
+            <input type="email" id="newsletterEmail" placeholder="Enter your email" required>
+
+            <button type="submit">
+            Subscribe
+        </button>
+
+        </form>
+
+    </section>
+
+    <footer>
+
+        <h2>Mimo's Bite</h2>
+
+        <p>📍 Kolkata, West Bengal, India</p>
+
+        <p>📞 +91 98765 43210</p>
+
+        <p>📧 contact@mimosbite.com</p>
+
+        <p>🕒 Mon - Sun | 9:00 AM - 9:00 PM</p>
+
+        <p>🌐 Follow Us:</p>
+
+        <div class="social-links">
+
+            <a href="#">📘 Facebook</a>
+
+            <a href="#">📷 Instagram</a>
+
+            <a href="#">💬 WhatsApp</a>
+
+        </div>
+
+        <p class="copyright">
+            © 2026 Mimo's Bite. All Rights Reserved.
+        </p>
+
+    </footer>
+
+    <!-- Back To Top Button -->
+    <button id="topBtn" onclick="topFunction()">
+    ⬆
+</button>
+
+    <!-- Back To Top Button -->
+
+    <button id="topBtn" onclick="topFunction()">
+    ⬆
+</button>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
